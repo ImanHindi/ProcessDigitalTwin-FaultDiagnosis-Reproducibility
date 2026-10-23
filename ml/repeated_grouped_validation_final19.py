@@ -1,0 +1,13 @@
+from __future__ import annotations
+import argparse,json,numpy as np,pandas as pd
+from sklearn.metrics import accuracy_score,balanced_accuracy_score,f1_score
+from sklearn.model_selection import train_test_split
+from sklearn.utils.class_weight import compute_sample_weight
+from xgboost import XGBClassifier
+from features import CFG
+from final19_common import build_or_load_feature_cache,feature_columns,REPORT_DIR,load_locked_split
+p=argparse.ArgumentParser();p.add_argument('--repeats',type=int,default=5);p.add_argument('--n-jobs',type=int,default=int(CFG.get('training_n_jobs',2)));a=p.parse_args()
+data=build_or_load_feature_cache(False);split=load_locked_split();allowed=set(split.loc[split.partition.isin(['train','validation']),'run_id']);data=data[(data.supervised_usable==1)&data.run_id.isin(allowed)].copy();f=feature_columns(data);data[f]=data[f].astype(np.float32);runs=data[['run_id','run_target_label']].drop_duplicates('run_id');classes=np.array(sorted(data.class_label.astype(int).unique()),int);enc={int(c):i for i,c in enumerate(classes)};rows=[]
+for r in range(a.repeats):
+    seed=int(CFG['seed'])+100+r;truns,eruns=train_test_split(runs,test_size=.20,random_state=seed,stratify=runs.run_target_label);tm=data.run_id.isin(set(truns.run_id));em=data.run_id.isin(set(eruns.run_id));yt=np.array([enc[int(v)] for v in data.loc[tm,'class_label']],int);ye=np.array([enc[int(v)] for v in data.loc[em,'class_label']],int);m=XGBClassifier(objective='multi:softprob',num_class=len(classes),eval_metric='mlogloss',tree_method='hist',max_bin=128,n_estimators=300,max_depth=6,learning_rate=.05,min_child_weight=2,subsample=.90,colsample_bytree=.90,reg_lambda=2.,random_state=seed,n_jobs=a.n_jobs);m.fit(data.loc[tm,f],yt,sample_weight=compute_sample_weight('balanced',yt).astype(np.float32),verbose=False);pred=m.predict(data.loc[em,f]).astype(int);row={'repeat':r+1,'seed':seed,'train_runs':truns.run_id.nunique(),'evaluation_runs':eruns.run_id.nunique(),'accuracy':float(accuracy_score(ye,pred)),'balanced_accuracy':float(balanced_accuracy_score(ye,pred)),'macro_f1':float(f1_score(ye,pred,average='macro',zero_division=0))};rows.append(row);print(row)
+res=pd.DataFrame(rows);res.to_csv(REPORT_DIR/'final19_repeated_grouped_holdout_trainval_only.csv',index=False);summary={m:{'mean':float(res[m].mean()),'std':float(res[m].std(ddof=1)),'min':float(res[m].min()),'max':float(res[m].max())} for m in ['accuracy','balanced_accuracy','macro_f1']};(REPORT_DIR/'final19_repeated_grouped_holdout_summary.json').write_text(json.dumps(summary,indent=2));print(json.dumps(summary,indent=2));print('NOTE: locked TEST runs were excluded from this robustness analysis.')

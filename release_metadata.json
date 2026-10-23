@@ -1,0 +1,12 @@
+{
+  "project": "AlKaseeh process digital twin",
+  "release": "v1.1.0",
+  "accepted_physical_model": "v4.6.2",
+  "final_scientific_layer": "v4.6.3",
+  "scientific_campaign_runs": 1900,
+  "class_count": 19,
+  "final19_source_archive_sha256": "7de388299bd6beb57e045d05e6f7f44f9297d0e1ab55fbaea39c32aa3bd17b9b",
+  "source_model_included": false,
+  "full_simulation_reproducibility": "requires local source import and separate full dataset",
+  "notes": "Simulation-domain study; no live plant commissioning claim"
+}

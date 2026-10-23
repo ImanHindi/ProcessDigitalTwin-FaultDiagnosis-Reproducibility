@@ -1,0 +1,53 @@
+# Python and local runtime
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+# local artifacts and simulated raw datasets
+ml/data/final_scientific_v4_6_3/scientific1900/*.csv
+ml/data/final_scientific_v4_6_3/scientific1900/*.joblib
+ml/cache/
+ml/models/
+models/**/*.mat
+**/*.pt
+**/*.pth
+**/*.onnx
+**/*.h5
+**/*.hdf5
+**/*.pkl
+**/*.joblib
+**/*.ckpt
+**/*.safetensors
+**/*.sqlite
+**/*.db
+**/checkpoints/
+**/_backups/
+**/backups/
+**/logs/
+**/tmp/
+**/temp/
+# auto-generated hi-res publication outputs
+ml/reports/final19/publication_figures_600dpi/
+**/*.tiff
+**/*.tif
+# local/large archival packages
+*.rar
+*.7z
+*.tar.gz
+*.zip
+*.mp4
+*.avi
+*.mov
+*.mkv
+release_candidate/
+release_import_report.json

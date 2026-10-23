@@ -1,0 +1,92 @@
+{
+  "protocol": "Locked run-level split; model/hyperparameter and ensemble-weight selection uses TRAIN+VALIDATION information only; TEST untouched until this file is written.",
+  "final_fault_codes": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106
+  ],
+  "process_codes": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "sensor_codes": [
+    101,
+    102,
+    103,
+    104,
+    105,
+    106
+  ],
+  "feature_count": 170,
+  "enhanced_xgboost_params": {
+    "name": "deeper_depth8",
+    "n_estimators": 500,
+    "max_depth": 8,
+    "learning_rate": 0.035,
+    "min_child_weight": 2,
+    "gamma": 0.0,
+    "subsample": 0.85,
+    "colsample_bytree": 0.85,
+    "reg_alpha": 0.02,
+    "reg_lambda": 3.0,
+    "max_bin": 128
+  },
+  "ensemble_weights": [
+    1,
+    2,
+    3
+  ],
+  "primary_selection_metric": "validation macro-F1; ECE used only as tie breaker for ensemble weights",
+  "baseline_xgboost_params": {
+    "name": "baseline_depth6",
+    "n_estimators": 350,
+    "max_depth": 6,
+    "learning_rate": 0.05,
+    "min_child_weight": 2,
+    "gamma": 0.0,
+    "subsample": 0.9,
+    "colsample_bytree": 0.9,
+    "reg_alpha": 0.0,
+    "reg_lambda": 2.0,
+    "max_bin": 128
+  },
+  "family_params": {
+    "name": "family",
+    "n_estimators": 450,
+    "max_depth": 5,
+    "learning_rate": 0.05,
+    "min_child_weight": 2,
+    "gamma": 0.05,
+    "subsample": 0.9,
+    "colsample_bytree": 0.9,
+    "reg_alpha": 0.02,
+    "reg_lambda": 2.0,
+    "max_bin": 128
+  }
+}

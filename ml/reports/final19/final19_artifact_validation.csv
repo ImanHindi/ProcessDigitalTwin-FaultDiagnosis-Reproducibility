@@ -1,0 +1,44 @@
+check,pass,detail
+Feature cache has 1900 runs,True,1900
+Feature contract has 170 features,True,170
+Model exists: random_forest.joblib,True,[local path redacted for public release]
+Model exists: xgboost.joblib,True,[local path redacted for public release]
+Model exists: enhanced_xgboost.joblib,True,[local path redacted for public release]
+Model exists: extra_trees.joblib,True,[local path redacted for public release]
+Model exists: hierarchical_xgboost.joblib,True,[local path redacted for public release]
+Model exists: q1_probability_ensemble.joblib,True,[local path redacted for public release]
+Model exists: isolation_forest.joblib,True,[local path redacted for public release]
+Model exists: mode_conditioned_isolation_forest.joblib,True,[local path redacted for public release]
+random_forest.joblib: exact 19 classes,True,"[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 101, 102, 103, 104, 105, 106]"
+random_forest.joblib: 170 features,True,170
+xgboost.joblib: exact 19 classes,True,"[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 101, 102, 103, 104, 105, 106]"
+xgboost.joblib: 170 features,True,170
+enhanced_xgboost.joblib: exact 19 classes,True,"[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 101, 102, 103, 104, 105, 106]"
+enhanced_xgboost.joblib: 170 features,True,170
+extra_trees.joblib: exact 19 classes,True,"[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 101, 102, 103, 104, 105, 106]"
+extra_trees.joblib: 170 features,True,170
+hierarchical_xgboost.joblib: exact 19 classes,True,"[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 101, 102, 103, 104, 105, 106]"
+hierarchical_xgboost.joblib: process codes 1..12,True,"[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]"
+hierarchical_xgboost.joblib: sensor codes 101..106,True,"[101, 102, 103, 104, 105, 106]"
+hierarchical_xgboost.joblib: 170 features,True,170
+q1_probability_ensemble.joblib: exact 19 classes,True,"[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 101, 102, 103, 104, 105, 106]"
+q1_probability_ensemble.joblib: process codes 1..12,True,"[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]"
+q1_probability_ensemble.joblib: sensor codes 101..106,True,"[101, 102, 103, 104, 105, 106]"
+q1_probability_ensemble.joblib: 170 features,True,170
+Ensemble has three positive weights,True,"(1.0, 2.0, 3.0)"
+Supervised validation-selection lock exists,True,[local path redacted for public release]
+Locked supervised test completion marker,True,[local path redacted for public release]
+Final supervised comparison exists,True,
+Final19 LSTM artifact exists,True,[local path redacted for public release]
+LSTM locked-test marker exists,True,
+Anomaly model selection report exists,True,[local path redacted for public release]
+Anomaly selected model recorded,True,lstm_ae
+Deep anomaly artifact exists: dae,True,
+Deep anomaly artifact exists: vae,True,
+Deep anomaly artifact exists: cvae,True,
+Deep anomaly artifact exists: lstm_ae,True,
+Selected deep deployment artifact exists,True,lstm_ae
+Advanced report exists: final19_advanced_probability_metrics.csv,True,
+Advanced report exists: final19_per_class_metrics.csv,True,
+Advanced report exists: final19_fault_detection_delay_by_run.csv,True,
+Advanced report exists: final19_advanced_validation_summary.json,True,

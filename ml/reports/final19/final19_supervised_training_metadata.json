@@ -1,0 +1,54 @@
+{
+  "selection_lock": "ml/reports/final19/supervised_selection_lock.json",
+  "locked_test_rows": 10596,
+  "train_rows": 49808,
+  "validation_rows": 10572,
+  "trainval_rows_final_fit": 60380,
+  "features": 170,
+  "classes": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106
+  ],
+  "ensemble_weights": [
+    1,
+    2,
+    3
+  ],
+  "best_enhanced_xgboost_params": {
+    "name": "deeper_depth8",
+    "n_estimators": 500,
+    "max_depth": 8,
+    "learning_rate": 0.035,
+    "min_child_weight": 2,
+    "gamma": 0.0,
+    "subsample": 0.85,
+    "colsample_bytree": 0.85,
+    "reg_alpha": 0.02,
+    "reg_lambda": 3.0,
+    "max_bin": 128
+  },
+  "training_seconds": {
+    "random_forest": 33.456051799992565,
+    "xgboost": 66.95536209997954,
+    "enhanced_xgboost": 110.60383029998047,
+    "extra_trees": 14.254441999975825,
+    "hierarchical_xgboost": 48.295209100004286
+  }
+}

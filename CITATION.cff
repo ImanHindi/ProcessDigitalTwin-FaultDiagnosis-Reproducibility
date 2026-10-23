@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "Please cite the archived software release and the associated journal article, once published."
+title: "AlKaseeh Process Digital Twin: Multi-Fault Condition Monitoring Reproducibility Package"
+type: software
+version: 1.1.0
+authors:
+  - name: "AlKaseeh Process Digital Twin Reproducibility Project"
+abstract: "Research code and frozen Final19 diagnostic benchmark outputs for a simulation-domain MATLAB/Simscape process digital-twin study."
+keywords:
+  - digital twin
+  - Simscape
+  - fault diagnosis
+  - anomaly detection
+  - reproducibility

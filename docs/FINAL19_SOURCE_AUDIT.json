@@ -1,0 +1,190 @@
+{
+  "source": "Final19_ML_Retrain archive v4.6.3 uploaded October 2026",
+  "archive_files": 43,
+  "core_ml_files_checked": 36,
+  "matching_core_ml_files": 36,
+  "physical_model_filename": "AlKaseeh_PhysicalTwin_PM_FinalScientific_v4_6_2.slx",
+  "physical_model_in_uploaded_archive": false,
+  "core_files": [
+    {
+      "path": "ml/advanced_validation.py",
+      "status": "MATCH",
+      "sha256": "ca51425831c30038340ac2ccc1014fe814c20b52d031b95fc2da3e3c96bae1de"
+    },
+    {
+      "path": "ml/advanced_validation_final19.py",
+      "status": "MATCH",
+      "sha256": "60c4f8f9eb9b6ca70957067f4e8e4cf1e6305cd662246abaa6568d0c562e45b8"
+    },
+    {
+      "path": "ml/anomaly_models.py",
+      "status": "MATCH",
+      "sha256": "0dacdcbbcb35b192cdd4e8944e7624dd9e93e4ed12063b704736b18be0e24da3"
+    },
+    {
+      "path": "ml/build_final19_feature_cache.py",
+      "status": "MATCH",
+      "sha256": "b83fa57f2366529798f15024988449a2aab9c3a45f7876d91a687fd3c8f16c87"
+    },
+    {
+      "path": "ml/check_dataset_readiness.py",
+      "status": "MATCH",
+      "sha256": "24b528fce29a4de3531b8e9002ec14f2dd4f9e89285afe32ec2b11b120c5d59c"
+    },
+    {
+      "path": "ml/check_final19_training_readiness.py",
+      "status": "MATCH",
+      "sha256": "22c7ba0ecb22f1294ab9bb2031f7813075492b08e41b65e5b03ae39bd2258ea0"
+    },
+    {
+      "path": "ml/config.json",
+      "status": "MATCH",
+      "sha256": "75ad68849d5191cecb2c5464178e979fbcfd8bc4f4ad580f5dfec7439f198dfb"
+    },
+    {
+      "path": "ml/enhance_anomaly_operating_points.py",
+      "status": "MATCH",
+      "sha256": "7a30e9e25c2dc4d44972df29487775fa84ce811ff81d77c3a5e13d425c1de26a"
+    },
+    {
+      "path": "ml/enhance_anomaly_operating_points_final19.py",
+      "status": "MATCH",
+      "sha256": "2ecc745e1d2bba3c82d265324e78c9a4af2e8db771c817cb993faa0b1e87d45b"
+    },
+    {
+      "path": "ml/features.py",
+      "status": "MATCH",
+      "sha256": "99f83d612ed22a5669f31ce283ec9e7ea2e715d6018dc48e15064fe670aa5e42"
+    },
+    {
+      "path": "ml/final19_common.py",
+      "status": "MATCH",
+      "sha256": "e852e28b108ebb8166ebebacae5af6b7a25019e57bbabb5b024b7713e29160a0"
+    },
+    {
+      "path": "ml/generate_anomaly_validation_figures.py",
+      "status": "MATCH",
+      "sha256": "7a79e7777b9a103b0692181b6700a5ec04483759ca57a8239b7b5be28b99ff11"
+    },
+    {
+      "path": "ml/generate_final19_publication_figures.py",
+      "status": "MATCH",
+      "sha256": "219a749408139d4fe11b235f5602dadbcd63d3cd5ec81470a7c1cf4312f1f1ad"
+    },
+    {
+      "path": "ml/generate_final19_shap_report.py",
+      "status": "MATCH",
+      "sha256": "f87fcbab2f60ef4c063ede6e504023940779531c1569ac6b3a8089e6dd7ff027"
+    },
+    {
+      "path": "ml/generate_publication_figures_600dpi.py",
+      "status": "MATCH",
+      "sha256": "5aa45a2644b564b68f6d76812b4621785300228834b4751d2751612ebf05dda2"
+    },
+    {
+      "path": "ml/generate_shap_report.py",
+      "status": "MATCH",
+      "sha256": "3f949b478034dc8b140e4f05928207ca6abeb58e64bc23862f6e7e8f665f22a2"
+    },
+    {
+      "path": "ml/nested_window_validation.py",
+      "status": "MATCH",
+      "sha256": "109d7e191b3844b2f5886841d99184a58bf87023753f7f27ea91890fd92e6ef5"
+    },
+    {
+      "path": "ml/nested_window_validation_final19.py",
+      "status": "MATCH",
+      "sha256": "bff4e908c622d215d7f4e1ad0eaa50c40362b5a5d656c49dfe84e626b52fa89b"
+    },
+    {
+      "path": "ml/predict.py",
+      "status": "MATCH",
+      "sha256": "44b1195f45dc1077f513b9168c57ef0ea928be85d8f0c80754d1ad1ebbfea785"
+    },
+    {
+      "path": "ml/promote_final19_models.py",
+      "status": "MATCH",
+      "sha256": "42b8f9d2211b4003fa674464083d25547841c06b105ed729be1334f94c59ad14"
+    },
+    {
+      "path": "ml/repeated_grouped_validation.py",
+      "status": "MATCH",
+      "sha256": "68cdd4591b71d3ad785f6ecccf643b62aeb8a8e5bcd7fd2675f1693f98531b8c"
+    },
+    {
+      "path": "ml/repeated_grouped_validation_final19.py",
+      "status": "MATCH",
+      "sha256": "86fb00e247bc86ae5b068f87078849f437ab91a21d149856e8a49d39a8cb561d"
+    },
+    {
+      "path": "ml/smoke_test_final19_serving.py",
+      "status": "MATCH",
+      "sha256": "62b9ddc5bf870218db5c8a62ba5cfc14871bfb84f603fb4db89931f276d2984a"
+    },
+    {
+      "path": "ml/summarize_final19_results.py",
+      "status": "MATCH",
+      "sha256": "40b80966f46e70578c4bf45d8a4e547581ff36bc3195061f2c45155ba5a27d74"
+    },
+    {
+      "path": "ml/train_anomaly_benchmarks.py",
+      "status": "MATCH",
+      "sha256": "6ca9eff5310f2f82517abd8291dedc042427e701b9c47ae3aff06f0cd066dd7b"
+    },
+    {
+      "path": "ml/train_enhanced_models.py",
+      "status": "MATCH",
+      "sha256": "0237d67739caf959fc44f3d4fc427fdce09847408109cd13795e11fa1255a079"
+    },
+    {
+      "path": "ml/train_final19_anomaly_baselines.py",
+      "status": "MATCH",
+      "sha256": "92006ee4999cacf296b0f918ac2c3979c878fe80a7e8de6f1bda57af646ee0d9"
+    },
+    {
+      "path": "ml/train_final19_deep_anomaly.py",
+      "status": "MATCH",
+      "sha256": "e69c36e32124b8e0a77685edbbbb17fe4fe03a2a4c76e54f26b607eee47698f9"
+    },
+    {
+      "path": "ml/train_final19_lstm.py",
+      "status": "MATCH",
+      "sha256": "6ee5956012f64de65a4ccd4804a9e5f59feaffd42b32b17f2d9573dfd3290025"
+    },
+    {
+      "path": "ml/train_final19_supervised.py",
+      "status": "MATCH",
+      "sha256": "2b760230cbfb04cb2129d74f4a02e5e069a5345650c450955f28f37a13f4425a"
+    },
+    {
+      "path": "ml/train_mode_conditioned_anomaly.py",
+      "status": "MATCH",
+      "sha256": "452ffe64beff38f4d45c92d5eb86311a77a1787af546badfd60fb605e4999c6b"
+    },
+    {
+      "path": "ml/validate_final19_artifacts.py",
+      "status": "MATCH",
+      "sha256": "4ad87505edd3b0603a74c4328d36e480aa44b5a3ac972c35b3beba8b726c9cc5"
+    },
+    {
+      "path": "ml/verify_final19_publication_figures.py",
+      "status": "MATCH",
+      "sha256": "5cbcad4089e13910d50f655455a80ad6ca7e90c686ea5173d3d2fbff10f04835"
+    },
+    {
+      "path": "ml/verify_publication_figures.py",
+      "status": "MATCH",
+      "sha256": "0d264a63922abe0a1a5a65d406a96afbf162e4eaeaf003c7b7dfe9828439c9d3"
+    },
+    {
+      "path": "ml/window_length_sensitivity.py",
+      "status": "MATCH",
+      "sha256": "742d7a8cf7b02edc95728184e8aefe2efe94d1e1fbf183cf3024ec24ab215979"
+    },
+    {
+      "path": "ml/window_length_sensitivity_final19.py",
+      "status": "MATCH",
+      "sha256": "450f449616767796942fc5688e18d8b144fd7a7c12536382568141e7fbe65644"
+    }
+  ]
+}

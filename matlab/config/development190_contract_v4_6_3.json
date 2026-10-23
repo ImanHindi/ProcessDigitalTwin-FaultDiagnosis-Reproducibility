@@ -1,0 +1,40 @@
+{
+  "stage": "Development190",
+  "version": "v4.6.3",
+  "physical_model": "AlKaseeh_PhysicalTwin_PM_FinalScientific_v4_6_2.slx",
+  "measurement_layer": "ALK_apply_sensor_fault_v4_6_3.m",
+  "runs": 190,
+  "classes": 19,
+  "runs_per_class": 10,
+  "simulation_horizon_s": 9000,
+  "export_interval_s": 1,
+  "initial_level_m": [
+    0.12,
+    0.28
+  ],
+  "initial_temperature_K": [
+    293.15,
+    303.15
+  ],
+  "severity_ranges": {
+    "normal": [
+      0.0,
+      0.0
+    ],
+    "actuator_degradation_or_blockage": [
+      0.2,
+      0.6
+    ],
+    "discharge_leakage_code_6": [
+      0.1,
+      0.35
+    ],
+    "sensor_faults_101_106": [
+      0.2,
+      0.6
+    ]
+  },
+  "sensor_fault_physics": "Sensor faults use independent healthy physical realizations and are applied after simulation to measured channels only.",
+  "promotion_file": "DEVELOPMENT190_READY_FOR_1900.txt",
+  "important_scope_note": "This development runner does not randomize pump nominal capacity or heater maximum power because their exact validated model parameter handles/plant-calibrated ranges are not locked. They remain at the accepted v4.6.2 model values."
+}
