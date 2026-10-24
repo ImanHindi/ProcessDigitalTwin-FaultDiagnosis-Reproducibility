@@ -1,4 +1,4 @@
-# AlKaseeh Process Digital Twin — Reproducible Multi-Fault Condition Monitoring
+# System level physics-based Process Digital Twin framework — Reproducible Multi-Fault Condition Monitoring
 
 **Research software and evaluation evidence | Scientific1900 / Final19 | v1.1.0**
 
@@ -23,7 +23,7 @@ The included statistical exports support verification of the **reported Final19 
 ## Repository layout
 
 ```text
-AlKaseeh-DigitalTwin-Reproducibility/
+Physics-Based-DigitalTwin-Reproducibility/
 ├── ml/
 │   ├── config.json                    # Final19 frozen evaluation settings
 │   ├── features.py                    # 1 Hz → causal 60 s / 170-feature contract
